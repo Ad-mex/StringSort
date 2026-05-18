@@ -14,10 +14,10 @@ private:
         int i = l, j = l, k = r - 1;
         
         int ind = rnd() % (r - l) + l;
-        char ch = (d < v[ind].size()) ? (char)v[ind][d] : 0;
+        auto ch = (d < v[ind].size()) ? v[ind][d] : static_cast<String::value_type>(0);
         
         while (j <= k) {
-            char cur = (d < v[j].size()) ? (char)v[j][d] : 0;
+            auto cur = (d < v[j].size()) ? v[j][d] : static_cast<String::value_type>(0);
             
             if (cur < ch) {
                 v[i++].swap(v[j++]);

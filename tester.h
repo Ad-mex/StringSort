@@ -87,7 +87,7 @@ public:
                 all_count += CounterChar::counter;
             }
 
-            std::cout << "Size:\t" << sz << '\n' << "Time(ms):\t" << all_time_ns / 1000. / 50 << ' ' << "Cnt:\t" << all_count / 50. << std::endl;
+            std::cout << "Size:\t" << sz << '\n' << "Time(mcs):\t" << all_time_ns / 1000. / 50 << ' ' << "Cnt:\t" << all_count / 50. << std::endl;
             times.push_back(all_time_ns / 1000. / 50);
             counts.push_back(all_count / 50.);
         }
